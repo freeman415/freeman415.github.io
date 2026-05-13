@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog — Wade Freeman</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 2rem;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+        }
+
+        .blog-header {
+            max-width: 800px;
+            margin: 4rem auto 2rem;
+            padding: 0 2rem;
+            border-bottom: 2px solid #edf2f7;
+            padding-bottom: 2rem;
+        }
+
+        .blog-header h2 {
+            font-size: 3rem;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-header p {
+            font-size: 1.1rem;
+            color: #718096;
+        }
+
+        .post-list {
+            max-width: 800px;
+            margin: 2rem auto 4rem;
+            padding: 0 2rem;
+        }
+
+        .post-item {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            padding: 1.8rem 0;
+            border-bottom: 1px solid #edf2f7;
+            transition: transform 0.2s;
+        }
+
+        .post-item:hover {
+            transform: translateX(6px);
+        }
+
+        .post-item:hover .post-title {
+            color: #667eea;
+        }
+
+        .post-date {
+            font-size: 0.85rem;
+            color: #a0aec0;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.4rem;
+        }
+
+        .post-title {
+            font-size: 1.5rem;
+            color: #2d3748;
+            font-weight: 600;
+            transition: color 0.2s;
+            margin-bottom: 0.5rem;
+        }
+
+        .post-excerpt {
+            color: #718096;
+            font-size: 1rem;
+        }
+
+        .post-arrow {
+            float: right;
+            color: #667eea;
+            font-size: 1.2rem;
+            margin-top: 0.2rem;
+        }
+
+        footer {
+            background: #2d3748;
+            color: white;
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+
+        footer .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        footer .social-links {
+            margin-top: 1.5rem;
+        }
+
+        footer .social-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.3s;
+        }
+
+        footer .social-links a:hover {
+            color: #667eea;
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+
+            .blog-header h2 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Wade Freeman</h1>
+            <nav>
+                <a href="index.html#about">About</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="blog.html">Blog</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="blog-header">
+        <h2>Blog</h2>
+        <p>Thoughts, builds, and write-ups.</p>
+    </div>
+
+    <section class="post-list">
+
+        <a href="blog-post-1.html" class="post-item">
+            <span class="post-arrow">→</span>
+            <div class="post-date">March 13, 2026</div>
+            <div class="post-title">Blog Post #1: Riding with Mary</div>
+            <div class="post-excerpt">A write-up about riding with Mary.</div>
+        </a>
+
+        <!-- Add more posts here as new <a href="..."> blocks -->
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Wade Freeman. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+                <a href="#">Email</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
